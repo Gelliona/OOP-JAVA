@@ -12,11 +12,7 @@ public class RobotMap {
     private final int robotNumbers;
 
     public RobotMap(int n, int m) {
-        validateMap(n, m);
-        this.n = n;
-        this.m = m;
-        this.robotNumbers = 5;
-        this.robots = new ArrayList<>();
+        this(n, m, 5);
     }
 
     public RobotMap(int n, int m, int robotNumbers) {
